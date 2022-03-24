@@ -2,4 +2,4 @@
 
 from random import randint, choices #random elements
 from time import sleep #implement delays so the player isnt overwhelmed by text
-from chargen import player 
+from character_generator import player

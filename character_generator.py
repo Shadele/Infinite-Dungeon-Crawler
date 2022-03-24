@@ -1,5 +1,9 @@
 #this is where the character generation things live
 
+player_races = ("halfling", "human", "elf", "dwarf", "orc", "drow")
+player_classes = ("fighter", "archer", "wizard", "druid", "necromancer", "explorer", "thief", "paladin", "barbarian")
+alignment_chart = ("True Good", "Good", "Neutral Good", "True Neutral", "Neutral Evil", "Evil", "True Evil")
+
 class PlayerCharacter:
 	def __init__(self, name, race, type, alignment, hp, mp, speed, strength, defense, level):
 		self.name = name
@@ -16,7 +20,7 @@ class PlayerCharacter:
 #temporary test character. Eventually choice will be implemented
 #but Testbert is here to make sure things work
 
-player = PlayerCharacter(Testbert, human, fighter, neutral, 100, 100, 100, 10, 10, 1)
+player = PlayerCharacter("Testbert", "human", "fighter", "Neutral", 100, 100, 100, 10, 10, 1)
 
 
 '''def char_gen():
