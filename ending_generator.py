@@ -3,17 +3,19 @@
 
 
 
-def death(player, race, type, alignment, level, mrace, mtype, turns):
+def death(player, race, type, alignment, level, mrace, mtype, turns, points):
     print("You have died.")
     print(f"Farewell, {player}.")
     print(f"{player}, the {race} {type} was killed by a {mrace} {mtype}.")
     print(f"{player}'s alignment was {alignment}.")
     print(f"{player} reached level {level}.")
     print(f"They survived {turns} turns in the Neverending Dungeon.")
+    print(f"They accumulated a total of {points} points.")
 
-def win(player, race, type, alignment, level, turns):
+def win(player, race, type, alignment, level, turns, points):
     print("You have found the Amulet of Serpents!")
     print(f"{player}, the {race} {type} found the Amulet of Serpents and acieved fame and fortune.")
     print(f"{player}'s alignment was {alignment}.")
     print(f"{player} reached level {level}.")
     print(f"They survived {turns} turns in the Neverending Dungeon.")
+    print(f"They accumulated a total of {points} points.")
