@@ -19,9 +19,5 @@ def RandomEncounterMonster():
     enemy_race = choice(monster_races)
     enemy_class = choice(monster_classes)
     aggression_level = choice(aggression)
-
-
-
-
-RandomEncounterMonster()
-random_monster = Enemy(enemy_race, enemy_class, aggression_level, randint(5,15), randint(0,20), randint(player.level, player.level+3))
+    monster = Enemy(enemy_race, enemy_class, aggression_level, randint(80,110), randint(80, 110), range(player.level,player.level+3))
+    return monster

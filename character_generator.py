@@ -20,7 +20,10 @@ class PlayerCharacter:
 #temporary test character. Eventually choice will be implemented
 #but Testbert is here to make sure things work
 
-player = PlayerCharacter("Testbert", "human", "fighter", "Neutral", 100, 100, 100, 10, 10, 1)
+def char_gen():
+    #TODO implement choice
+    player = PlayerCharacter("Testbert", "human", "fighter", "Neutral", 100, 100, 100, 10, 10, 1)
+    return player
 
 
 '''def char_gen():
